@@ -106,7 +106,7 @@ ____
 - แปลง Raw HTML String ให้เป็นโครงสร้าง Tree (DOM Tree) เพื่อให้โค้ดไต่หาข้อมูลได้
 - library : BeautifulSoup/Selenium/Scrapy
 
-**BeautifulSoup**
+**2.1) BeautifulSoup**
 
 - รับข้อความดิบมาทำเป็น Tree Object (ที่เรามักตั้งชื่อตัวแปรว่า soup) เพื่อให้เราไต่กิ่งก้านไปหยิบข้อมูลได้ง่ายๆ
 

@@ -67,7 +67,16 @@ ____
 
 ### 2)  Intro to HTML3
 
- แนบรูป
+<br>
+
+
+ <img width="704" height="422" alt="Screenshot 2569-11-15 at 14 04 01" src="https://github.com/user-attachments/assets/9a2ccf45-cdba-479b-ae5b-fb3e7da1ce8b" />
+
+ <br>
+
+<img width="749" height="366" alt="Screenshot 2569-11-15 at 14 04 12" src="https://github.com/user-attachments/assets/ff6c543e-3366-44ba-8566-8e446fb0f0e0" />
+
+<br>
 
 - ภาษาที่ใช้ทำเว็บ หรือแสดงผล
 - tag p เปิด ปิด 1 พารากราฟ :
@@ -81,7 +90,7 @@ ____
 
 ### 3)  Web Scraping Workflow
 
-แนบรูป
+<img width="753" height="382" alt="Screenshot 2569-11-15 at 14 04 24" src="https://github.com/user-attachments/assets/6bf9af0f-452f-42b6-8e3b-be70634410d8" />
 
 **1) Get the Website**
 
@@ -89,7 +98,7 @@ ____
 - ซึ่งมันจะได้ก้อนไฟล์ 1 ก้อน
 - ข้อมูลที่ได้จะเป็นแค่ ข้อความดิบยาวๆ (Raw HTML String) ที่โปรแกรมยังแยกไม่ออกว่าอันไหนคือหัวข้อ อันไหนคือราคา
 
-แนบรูป 
+<img width="753" height="415" alt="Screenshot 2569-11-15 at 14 04 39" src="https://github.com/user-attachments/assets/e8ebb363-8914-4cf1-9d33-00325f45f08f" /> 
 
 **2) Parse (แปลงโครงสร้างเพื่อค้นหา)**
 
@@ -101,11 +110,14 @@ ____
 
 - รับข้อความดิบมาทำเป็น Tree Object (ที่เรามักตั้งชื่อตัวแปรว่า soup) เพื่อให้เราไต่กิ่งก้านไปหยิบข้อมูลได้ง่ายๆ
 
-แนบรูป
+<img width="552" height="266" alt="Screenshot 2569-11-15 at 14 05 22" src="https://github.com/user-attachments/assets/c9e8d1c3-d930-472f-9e2e-d5a864f20aeb" />
 
 - อยากดึง tag , Attb, หรือแท็ก id สามารถใส่คำศัพทย์ตรงๆ
 - โยน html แล้วหาตรงๆได้เลย
 - คำสั่ง find : หา element แรก , find_all ได้มาเป็น list ถ้ามีหลาย output
+
+  
+<img width="554" height="323" alt="Screenshot 2569-11-15 at 14 05 36" src="https://github.com/user-attachments/assets/0983c82e-bb6b-4c12-bf56-0211d3fde5ee" />
 
 **3) Extract & Store (ดึงค่าและจัดเก็บ)**
 

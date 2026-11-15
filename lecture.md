@@ -6,10 +6,11 @@
 
 1) What is Web Scraping 
 2) Intro to HTML3
-3) Web Scraping with Requests and Python Beautiful Soup 
-4) Using Selenium to handle AJAX & JavaScript driven web pages
-5) Regular expressions with Python
-6) Real World Example(Pantip.com)
+3) Web Scraping Workflow
+4) Web Scraping with Requests and Python Beautiful Soup 
+5) Using Selenium to handle AJAX & JavaScript driven web pages
+6) Regular expressions with Python
+7) Real World Example(Pantip.com)
    
 ____ 
 
@@ -63,5 +64,59 @@ ____
 
 - เปิดมา เจอเนื้อหาที่เราต้องการ แต่ไม่ใช่ทั้งหมด อาจจะต้องทำไรสักอย่างกับเว็บ
 ____ 
+
+### 2)  Intro to HTML3
+
+ แนบรูป
+
+- ภาษาที่ใช้ทำเว็บ หรือแสดงผล
+- tag p เปิด ปิด 1 พารากราฟ :
+  - Attribute กำหนดคุณสมบัติให้กับ tag
+  - class  เพื่อนำไปจัดรูปแบบ (Styling) หรือควบคุมด้วย JavaScript
+  - id : ชื่อแท็ก
+ 
+ 
+
+____ 
+
+### 3)  Web Scraping Workflow
+
+แนบรูป
+
+**1) Get the Website**
+
+- ดูดหน้าเว็บ อาจะใช้ library python : urllib หรือ Requests
+- ซึ่งมันจะได้ก้อนไฟล์ 1 ก้อน
+- ข้อมูลที่ได้จะเป็นแค่ ข้อความดิบยาวๆ (Raw HTML String) ที่โปรแกรมยังแยกไม่ออกว่าอันไหนคือหัวข้อ อันไหนคือราคา
+
+แนบรูป 
+
+**2) Parse (แปลงโครงสร้างเพื่อค้นหา)**
+
+- การจัดรูปแบบก้อนไฟล์ในรูปแบบที่เหมาะสม เช่น tree
+- แปลง Raw HTML String ให้เป็นโครงสร้าง Tree (DOM Tree) เพื่อให้โค้ดไต่หาข้อมูลได้
+- library : BeautifulSoup/Selenium/Scrapy
+
+**BeautifulSoup**
+
+- รับข้อความดิบมาทำเป็น Tree Object (ที่เรามักตั้งชื่อตัวแปรว่า soup) เพื่อให้เราไต่กิ่งก้านไปหยิบข้อมูลได้ง่ายๆ
+
+แนบรูป
+
+- อยากดึง tag , Attb, หรือแท็ก id สามารถใส่คำศัพทย์ตรงๆ
+- โยน html แล้วหาตรงๆได้เลย
+- คำสั่ง find : หา element แรก , find_all ได้มาเป็น list ถ้ามีหลาย output
+
+**3) Extract & Store (ดึงค่าและจัดเก็บ)**
+
+- หยิบเฉพาะข้อมูลที่ต้องการออกจาก Tree แล้วแปลงเป็นรูปแบบที่ใช้งานต่อได้ เช่น Table (CSV, Excel) หรือ JSON
+
+
+
+
+
+
+
+
 
 
